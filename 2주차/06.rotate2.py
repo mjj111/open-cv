@@ -1,4 +1,5 @@
-import numpy as np, cv2
+import numpy as np
+import cv2
 from Common.interpolation import rotate_pt
 
 def calc_angle(pts):
@@ -36,7 +37,7 @@ def onMouse(event, x, y, flags, param):
         tmp = np.copy(image)  # 임시 행렬 초기화
         pts = []
 
-image = cv2.imread('images/rotate.jpg', cv2.IMREAD_COLOR)
+image = cv2.imread('C:\Users\82105\Desktop\open-cv\2주차\images\rotate.jpg', cv2.IMREAD_COLOR)
 if image is None: raise Exception("영상 파일을 읽기 에러")
 tmp = np.copy(image)
 pts = []
